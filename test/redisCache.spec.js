@@ -14,7 +14,15 @@ describe('redisCache', function() {
     };
   });
 
-  it('should get data from redis', async() => {
+  it('should get simple data from redis', async() => {
+    const inst = new Foo();
+    let r = await inst.bar();
+    expect(r).to.equal(1);
+    r = await inst.bar();
+    expect(r).to.equal(1);
+  });
+
+  it('should get simple data from redis', async() => {
     const inst = new Foo();
     let r = await inst.bar();
     expect(r).to.equal(1);
