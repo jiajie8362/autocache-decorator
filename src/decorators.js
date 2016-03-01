@@ -2,7 +2,7 @@
 * decorators.js
 * (c) 2016 jia jie
 * MIT Licensed
-* https://github.com/jiajie8362/decorator-utils
+* https://github.com/jiajie8362/decorator-helpers
 * @license
 */
 
