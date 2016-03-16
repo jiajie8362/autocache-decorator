@@ -8,7 +8,7 @@ gulp.task('default', ['spec']);
 
 ['major', 'minor', 'patch'].forEach((type) => {
   gulp.task(`bump:${type}`, ['build'], () =>
-    gulp.src('.package.json')
+    gulp.src('./package.json')
     .pipe(bump({ type }))
     .pipe(gulp.dest('./'))
   );
