@@ -77,10 +77,7 @@ describe('autocache test', () => {
 
   describe('object', () => {
     const Foo = class {
-      static data = {
-        name: '1',
-        age: 12
-      };
+      static data = { name: '1', age: 12 };
 
       updateCounter(value) {
         Foo.data = value;

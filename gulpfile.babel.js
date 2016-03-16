@@ -2,6 +2,7 @@ import gulp from 'gulp';
 import bump from 'gulp-bump';
 import babel from 'gulp-babel';
 import start from 'gulp-start-process';
+import fs from 'graceful-fs';
 
 gulp.task('default', ['spec']);
 
@@ -32,3 +33,21 @@ gulp.task('build:babel', () =>
     .pipe(babel())
     .pipe(gulp.dest('lib'))
 );
+
+// gulp.task('redis:folder', 'Create redis.tmp/ for temp redis db files', function(done) {
+//   return fs.exists(__dirname + '/redis.tmp', function(exists) {
+//     if (exists) {
+//       return done();
+//     }
+//
+//     return fs.mkdir(__dirname + "/redis.tmp", done);
+//   });
+// });
+//
+// gulp.task('redis:start', 'Start redis server', ['redis:folder'], function(done) {
+//   return start('redis-server ' + __dirname + '/redis.conf', done);
+// });
+//
+// gulp.task('redis:stop', 'Stop redis server', function(done) {
+//   return start('redis-cli shutdown', done);
+// });
