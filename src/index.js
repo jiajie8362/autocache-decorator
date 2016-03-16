@@ -1,0 +1,1 @@
+import autocache from './decorators';

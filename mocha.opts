@@ -3,4 +3,5 @@
 --reporter spec
 --ui bdd
 --recursive
---require ./test/specHelper.js
+--compilers js:babel-register
+--require ./specs/specHelper.js

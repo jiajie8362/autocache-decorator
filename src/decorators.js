@@ -2,13 +2,13 @@
 * decorators.js
 * (c) 2016 jia jie
 * MIT Licensed
-* https://github.com/jiajie8362/decorator-helpers
+* https://github.com/jiajie8362/autocache-decorator
 * @license
 */
 
-var chai =require('chai');
-var sinonChai = require('sinon-chai');
-var RedisClient = require('../src/private/RedisClient');
+import chai from 'chai';
+import sinonChai from 'sinon-chai';
+import RedisClient from '../src/private/RedisClient';
 
 function cleanRedis() {
   return redis.flushdb();
