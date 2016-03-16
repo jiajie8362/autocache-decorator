@@ -20,7 +20,7 @@ describe('autoexpire test', () => {
       }
     };
 
-    it.only('should expire the key', async () => {
+    it('should expire the key', async () => {
       const foo = new Foo();
 
       let r = await foo.getCachedCounter(1);

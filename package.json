@@ -4,7 +4,7 @@
   "description": "Library of ES2016 (ES7) JavaScript decorators utils",
   "main": "index.js",
   "scripts": {
-    "build": "babel --out-dir lib src"
+    "test": "gulp spec"
   },
   "repository": {
     "type": "git",
