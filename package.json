@@ -1,5 +1,5 @@
 {
-  "name": "redisCache-decorator",
+  "name": "rediscache-decorator",
   "version": "0.0.1",
   "description": "Library of ES2016 (ES7) JavaScript decorators utils",
   "main": "index.js",
